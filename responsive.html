@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsibe Website</title>
+    <style>
+        body{
+            border: 1px solid blue;
+            max-width: 1140;
+            margin: 0px auto;
+        }
+        .img-container{
+            display: flex;
+
+        }
+        .img-container dive{
+            width: 50%;
+        }
+        .img-container img{
+            width:100%;
+        }
+        @media screen and (max-width:576px) {
+            .img-container{
+                flex-direction:column-reverse;
+            }
+            .img-container div{
+                width: 50%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+<header>
+    <ol>
+        <li>Viewport meta Tag</li>
+        <li>CSS Relative Unit</li>
+        <li>Body max width and horizontal center laign </li>
+        <li>Img Fluid</li>  
+        <li>Two column flex and use media qury with flex</li>
+        <li>multi colum layout</li>
+        <li>Menu resposive with help of JS</li>
+    </ol>
+</header>  
+<section>
+    <div class="img-container">
+        <div><img src="./img/food.jpeg" alt=""></div>
+        <div><img src="./img/tiger.webp" alt=""></div>
+    </div>
+
+</section>  
+</body>
+</html>
